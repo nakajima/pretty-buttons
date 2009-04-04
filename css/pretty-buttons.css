@@ -28,10 +28,10 @@ a.button span {
 }
 
 a.button b.gradient {
-  height:40%;
+  height: 45%;
   width: 100%;
   background: #f9f9f9;
-  border-bottom: 5px solid #eee;
+  border-bottom: 0.3em solid #eee;
   top: 0;
   left: 0;
   position: absolute;
@@ -74,6 +74,7 @@ a.button:active {
 }
 
 a.button:active b.gradient {
+  height: 45%;
   background: #e3e3e3;
   z-index: 2;
 }
