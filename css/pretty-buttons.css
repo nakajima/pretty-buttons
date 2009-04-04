@@ -46,11 +46,54 @@ a.button i {
   display: block;
   background: #fff;
   position: absolute;
+}
+
+a.button b.gradient:before {
+  content: ' ';
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  left: -1px;
+  top: -1px;
   z-index: 4;
 }
 
-a.button i.top {
+a.button b.gradient:after {
+  content: ' ';
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  right: -1px;
   top: -1px;
+  z-index: 4;
+}
+
+a.button:before {
+  content: ' ';
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+  z-index: 4;
+}
+
+a.button:after {
+  content: ' ';
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  z-index: 4;
 }
 
 a.button i.right {
