@@ -1,0 +1,79 @@
+a.button {
+  padding: 0;
+  height: 2em;
+  color: #333333;
+  border: 1px solid #bbb;
+  background: #e3e3e3;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 0.8em;
+  line-height: 2.1em;
+  overflow: visible;
+  position: relative;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+a.button:active, a.button:focus {
+  outline: none;
+}
+
+a.button span {
+  margin: 0 0.7em;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+a.button b.gradient {
+  height:40%;
+  width: 100%;
+  background: #f9f9f9;
+  border-bottom: 5px solid #eee;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+}
+
+a.button i {
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  z-index: 4;
+}
+
+a.button i.top {
+  top: -1px;
+}
+
+a.button i.right {
+  right: -1px;
+}
+
+a.button i.left {
+  left: -1px;
+}
+
+a.button i.bottom {
+  bottom: -1px;
+}
+
+a.button:hover {
+  border-color: #9f9f9f;
+}
+
+a.button:active {
+  background: #f9f9f9;
+}
+
+a.button:active b.gradient {
+  background: #e3e3e3;
+  z-index: 2;
+}
