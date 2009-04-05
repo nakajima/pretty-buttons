@@ -11,7 +11,7 @@
     var css = [PREFIX, selector, suffix, '{', ruleCSS, '}'].join('');
 
     document.styleSheets[0].insertRule(css,
-      document.styleSheets[0].rules.length);
+      document.styleSheets[0].cssRules.length);
   }
 
   function nextGradientColor(i) {
