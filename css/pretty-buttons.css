@@ -1,13 +1,41 @@
-a.button {
+/**
+  configurable bits
+*/
+
+.is-button {
+  color: #333333;
+  background: #e3e3e3;
+  border: 1px solid #bbb;
+}
+
+  .is-button:hover {
+    border-color: #9f9f9f;
+  }
+
+  .is-button:active {
+    background: #f9f9f9;
+  }
+
+  .is-button:active .gradient {
+    background: #e3e3e3;
+  }
+
+.is-button .gradient {
+  background: #f9f9f9;
+  border-bottom: 0.3em solid #eee;
+}
+
+/**
+  Infrastructure Styles
+*/
+
+.is-button {
   padding: 0;
   height: 2em;
-  color: #333333;
-  border: 1px solid #bbb;
-  background: #e3e3e3;
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 0.8em;
   line-height: 2.1em;
   overflow: visible;
@@ -16,22 +44,20 @@ a.button {
   z-index: 1;
 }
 
-a.button:active, a.button:focus {
+.is-button:active, .is-button:focus {
   outline: none;
 }
 
-a.button span {
+.is-button span {
   margin: 0 0.7em;
   position: relative;
   z-index: 3;
   cursor: pointer;
 }
 
-a.button b.gradient {
+.is-button b.gradient {
   height: 45%;
   width: 100%;
-  background: #f9f9f9;
-  border-bottom: 0.3em solid #eee;
   top: 0;
   left: 0;
   position: absolute;
@@ -40,7 +66,7 @@ a.button b.gradient {
   cursor: pointer;
 }
 
-a.button i {
+.is-button i {
   width: 1px;
   height: 1px;
   display: block;
@@ -49,32 +75,22 @@ a.button i {
   z-index: 4;
 }
 
-a.button i.top {
+.is-button i.top {
   top: -1px;
 }
 
-a.button i.right {
+.is-button i.right {
   right: -1px;
 }
 
-a.button i.left {
+.is-button i.left {
   left: -1px;
 }
 
-a.button i.bottom {
+.is-button i.bottom {
   bottom: -1px;
 }
 
-a.button:hover {
-  border-color: #9f9f9f;
-}
-
-a.button:active {
-  background: #f9f9f9;
-}
-
-a.button:active b.gradient {
-  height: 45%;
-  background: #e3e3e3;
+.is-button:active b.gradient {
   z-index: 2;
 }
