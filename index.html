@@ -25,8 +25,8 @@
     </p>
 
     <a class="button" href="#">Something</a>
-    <a class="button" href="#">And Another</a>
     <a class="button" href="#"><b>Stronger</b></a>
+    <a class="darker" href="#">And Another</a>
     <a class="warning" href="#">Warning</a>
     <a class="green" href="#">Start</a>
 
@@ -37,6 +37,12 @@
         color: '#fff',
         background: '#C92E29'
       });
+      
+      $('.darker').toButton({
+        color: '#fff',
+        borderColor: '#222',
+        background: '#333'
+      })
 
       $('.green').toButton({
         color: '#fff',
